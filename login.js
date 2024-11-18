@@ -7,4 +7,10 @@ loginButton.addEventListener('click', () => {
   window.location.href = 'dashboard.html';
 });
 
+//Função para usuário que esqueceu senha
+function forgotPassword() {
+  document.getElementById("forgotPasswordSection").style.display = "block";
+}
+
+
 
