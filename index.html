@@ -1,53 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="loginstyle.css">
-    <title>Login Terras Mil</title>
-</head>
-
 <body>
 
-    <div class="container">
-        <h1> Bem vindo ao Terras Mil 👏</h1>
-        <div class="social-login">
+    <header>
+        <h1>Bem vindo ao Terras Mil 👏</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="social-login">
+            </div>
+            <div class="divider">
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+            <form>
+                <label for="email">Email:</label>
+                <div class="custome-input">
+                    <input type="email" name="email" placeholder="Seu email" required>
+                    <i class='bx bx-at'></i>
+                </div>
+                <label for="password">Senha:</label>
+                <div class="custome-input">
+                    <input type="password" name="password" placeholder="Sua senha" required>
+                    <i class='bx bx-lock-alt'></i>
+                </div>
+                <button class="login" type="button" onclick="window.location.href='dashboard.html'">Login</button>
+
+                <div class="links">
+                    <a href="#" onclick="forgotPassword()">Esqueci minha senha</a>
+                </div>
+            </form>
+
+            <section id="forgotPasswordSection" style="display: none;">
+                <p>Verifique sua solicitação no RH</p>
+            </section>
+
         </div>
-        <div class="divider">
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
+    </main>
 
-        <form>
-            <label for="email">Email:</label>
-            <div class="custome-input">
-                <input type="email" name="email" placeholder="Seu email" autocomplete="off">
-                <i class='bx bx-at'></i>
-            </div>
-            <label for="password">Senha:</label>
-            <div class="custome-input">
-                <input type="password" name="password" placeholder="Sua senha">
-                <i class='bx bx-lock-alt'></i>
-            </div>
-            <button class="login" type="button" onclick="window.location.href='dashboard.html'">Login</button>
+    <footer>
+        <script src="scriptlogin.js"></script>
+        <script src="bd.js"></script>
+        <script src="server.js"></script>
 
-
-            <div class="links">
-                <a href="#" onclick="forgotPassword()">Esqueci minha senha</a>
-            </div>
-            
-            <div id="message" style="display: none;">
-                Verifique sua solicitação no RH
-            </div>
-        </form>
-
-    </div>
-    
-    <script src="scriptlogin.js"></script>
-    <script src="bd.js"></script>
-    <script src="server.js"></script>
+        <script>
+            function forgotPassword() {
+                document.getElementById("forgotPasswordSection").style.display = "block";
+            }
+        </script>
+    </footer>
 
 </body>
 
