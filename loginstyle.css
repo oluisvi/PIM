@@ -174,3 +174,6 @@ body {
 .container .links a:hover {
   text-decoration: underline;
 }
+.forgotPasswordSection {
+  position: relative;
+}
