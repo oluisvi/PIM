@@ -52,10 +52,15 @@
         <script src="server.js"></script>
 
         <script>
-            function forgotPassword() {
-                document.getElementById("forgotPasswordSection").style.display = "block";
+        function forgotPassword() {
+            const forgotPasswordSection = document.getElementById("forgotPasswordSection");
+            if (forgotPasswordSection.style.display === "none") {
+                forgotPasswordSection.style.display = "block";
+            } else {
+                forgotPasswordSection.style.display = "none";
             }
-        </script>      
+        }
+    </script>  
             
     </footer>
     
