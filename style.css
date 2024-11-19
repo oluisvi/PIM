@@ -100,7 +100,7 @@ body{
 
 .overlay.active {
     display: block;
-
+}
 .top-container .nav .right-section .profile{
     display: flex;
     align-items: center;
