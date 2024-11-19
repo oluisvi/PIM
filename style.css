@@ -86,6 +86,21 @@ body{
     cursor: pointer;
 }
 
+.overlay {
+    display: none; 
+    position: absolute;
+    background-color: rgba(211, 211, 211, 0.9); 
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    top: 50px; 
+    right: 20px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.overlay.active {
+    display: block;
+
 .top-container .nav .right-section .profile{
     display: flex;
     align-items: center;
